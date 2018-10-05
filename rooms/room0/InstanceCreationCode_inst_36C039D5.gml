@@ -1,3 +1,3 @@
-AngleMultiplierX = 0;
-AngleMultiplierY = -4;
+AngleMultiplierX = 4;
+AngleMultiplierY = 0;
 AngleIncrement = 0.2;
