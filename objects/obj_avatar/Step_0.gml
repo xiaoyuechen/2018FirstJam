@@ -9,7 +9,7 @@ var move = key_right - key_left;
 hsp = move*walksp;
 vsp = vsp + grv;
 
-if place_meeting(x,y+1,obj_wall) && (key_jump)
+if (place_meeting(x,y+1,obj_wall) || place_meeting(x,y+1,obj_platform)) && (key_jump)
 {
 	vsp = jumpsp;
 }
@@ -23,7 +23,7 @@ if(place_meeting(x+hsp,y,obj_wall))
 	hsp = 0;
 }
 
-x = x + hsp;
+
 
 if(place_meeting(x,y+vsp,obj_wall))
 {
@@ -34,6 +34,27 @@ if(place_meeting(x,y+vsp,obj_wall))
 	vsp = 0;
 }
 
+if(place_meeting(x+hsp,y,obj_platform))
+{
+	while(!place_meeting(x+sign(hsp),y,obj_platform))
+	{
+		x = x + sign(hsp);
+	}
+	hsp = 0;
+}
+
+
+if(place_meeting(x,y+vsp,obj_platform))
+{
+	while(!place_meeting(x,y+sign(vsp),obj_platform))
+	{
+		y = y + sign(vsp);
+	}
+	vsp = 0;
+}
+
+
+x = x + hsp;
 y = y + vsp;
 
 if(key_left) image_xscale = -1;

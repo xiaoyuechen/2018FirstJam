@@ -95,10 +95,26 @@
             }
         },
         {
+            "Key": "4a9a4def-8a9c-4308-917f-31e1acf24950",
+            "Value": {
+                "id": "093ca4af-3214-4cdf-9e9e-42180948beab",
+                "resourcePath": "sprites\\sprite3\\sprite3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "502f764b-bce1-49fa-9ad4-57db200bd811",
             "Value": {
                 "id": "fbc8e593-79a8-4c6d-92f4-313db12faffe",
                 "resourcePath": "objects\\obj_wall\\obj_wall.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "50fa1ada-c29b-4875-a3ce-1eb0401c7d80",
+            "Value": {
+                "id": "5ad6b583-c11c-45f8-a3ca-1eb56df181e8",
+                "resourcePath": "objects\\obj_platform\\obj_platform.yy",
                 "resourceType": "GMObject"
             }
         },
