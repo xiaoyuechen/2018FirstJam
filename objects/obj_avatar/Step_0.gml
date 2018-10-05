@@ -49,5 +49,19 @@ if(place_meeting(x,y+vsp,obj_platform))
 x = x + hsp;
 y = y + vsp;
 
+image_speed = 1;
+if(hsp == 0)
+{
+	sprite_index = standPlayer;
+}
+else if(key_jump)
+{
+	sprite_index = jumpPlayer;
+}
+else
+{
+	sprite_index = runPlayer;
+}
+
 if(key_left) image_xscale = -1;
 if(key_right) image_xscale = 1;
