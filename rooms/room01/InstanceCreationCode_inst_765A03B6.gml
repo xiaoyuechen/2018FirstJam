@@ -1,3 +1,3 @@
 secondEnd = false;
-startPointX = 0;
+startPointX = 90;
 startPointY = 450;

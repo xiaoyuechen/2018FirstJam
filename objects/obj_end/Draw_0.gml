@@ -8,5 +8,6 @@ if(hit && !secondEnd)
 if(hit && secondEnd)
 {
 	draw_set_colour(c_white);
-	draw_text(x, y-10, "The end!");
+	draw_text(x, y-30, "The end! ");
+	draw_text(x, y-20, "Please die for the next player.");
 }
